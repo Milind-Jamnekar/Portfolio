@@ -381,7 +381,130 @@ img {
 }
 
 /*==================== SKILLS ====================*/
+.skills__container {
+  row-gap: 0;
+}
 
+.skills__header {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: var(--mb-2-5);
+  cursor: pointer;
+}
+
+.skills__icon {
+  font-size: 2rem;
+  color: var(--first-color);
+}
+
+.skills__header > i:first-child {
+  margin-right: var(--mb-0-75);
+}
+.skills__header > i:last-child {
+  margin-left: auto;
+  transition: 0.2s;
+}
+.skills__title {
+  font-size: var(--h3-font-size);
+}
+
+.skills__data {
+  margin-left: var(--mb-3);
+  /* margin-bottom: var(--mb-1); */
+}
+
+.skills__title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills__name {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+
+.skills__bar,
+.skills__percentage {
+  height: 5px;
+  border-radius: 0.25rem;
+}
+
+.skills__bar {
+  background-color: var(--first-color-lighter);
+}
+.skills__percentage {
+  display: block;
+  background-color: var(--first-color);
+  transition: animate 0.3s ease-in;
+}
+
+.skill__react {
+  width: 80%;
+}
+
+.skill__js {
+  width: 90%;
+}
+.skill__html {
+  width: 80%;
+}
+.skill__css {
+  width: 70%;
+}
+.skill__nodejs {
+  width: 75%;
+}
+.skill__firebase {
+  width: 70%;
+}
+.skill__python {
+  width: 60%;
+}
+
+/* .skills__list {
+  margin-bottom: var(--mb-2);
+} */
+
+/* .skills__close .skills__list {
+  height: 0;
+  overflow: hidden;
+}
+
+.skills__open .skills__list {
+  height: max-content;
+  margin-bottom: var(--mb-2-5);
+} */
+
+.skills__close .skills__list {
+  /* transform: translateY(-100%); */
+  /* opacity: 0; */
+  height: 0;
+  overflow: hidden;
+  transition: transform 0.3s, opacity 0.3s, height 0.5s, margin 0.4s;
+}
+
+.skills__open .skills__list {
+  /* transform: translateY(0%); */
+  /* opacity: 1; */
+  height: max-content;
+  margin-bottom: var(--mb-2);
+  overflow: hidden;
+  transition: transform 0.3s, opacity 0.3s, height 0.5s;
+}
+
+.skills__open .skills__header > i:last-child {
+  transform: rotate(-180deg);
+}
+@keyframes animate {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
 /*==================== QUALIFICATION ====================*/
 
 /*==================== SERVICES ====================*/
