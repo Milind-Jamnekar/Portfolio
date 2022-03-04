@@ -32,7 +32,6 @@ const skillContent = document.querySelectorAll(".skills__content"),
 
 function toggleSkills() {
   let itemClass = this.parentNode.className;
-  console.log(this.parentNode.className);
   for (let i = 0; i < skillContent.length; i++) {
     skillContent[i].className = "skills__content skills__close";
   }

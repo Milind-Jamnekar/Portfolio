@@ -272,6 +272,7 @@ img {
 
 .home__data {
   grid-column: 1/3;
+  /* text-align: center; */
 }
 
 .home__data > h1 {
@@ -282,11 +283,12 @@ img {
   font-size: var(--h3-font-size);
   color: var(--text-color);
   font-weight: var(--font-medium);
-  margin-bottom: var(--mb-0-75);
+  margin-bottom: var(--mb-1-5);
 }
 
 .home__data > p {
   margin-bottom: var(--mb-2);
+  line-height: 1.75;
 }
 
 .home__scroll {
@@ -411,7 +413,7 @@ img {
 
 .skills__data {
   margin-left: var(--mb-3);
-  /* margin-bottom: var(--mb-1); */
+  margin-bottom: var(--mb-1-5);
 }
 
 .skills__title {
@@ -477,20 +479,14 @@ img {
 } */
 
 .skills__close .skills__list {
-  /* transform: translateY(-100%); */
-  /* opacity: 0; */
   height: 0;
   overflow: hidden;
-  transition: transform 0.3s, opacity 0.3s, height 0.5s, margin 0.4s;
+  transition: height 0.4s;
 }
 
 .skills__open .skills__list {
-  /* transform: translateY(0%); */
-  /* opacity: 1; */
   height: max-content;
-  margin-bottom: var(--mb-2);
   overflow: hidden;
-  transition: transform 0.3s, opacity 0.3s, height 0.5s;
 }
 
 .skills__open .skills__header > i:last-child {
@@ -506,7 +502,11 @@ img {
   }
 }
 /*==================== QUALIFICATION ====================*/
-
+.qual__tabs {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: var(--mb-2);
+}
 /*==================== SERVICES ====================*/
 
 /* Active Modal */
