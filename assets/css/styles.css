@@ -507,6 +507,82 @@ img {
   justify-content: space-evenly;
   margin-bottom: var(--mb-2);
 }
+
+.qual__btn {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  cursor: pointer;
+}
+
+.qual__btn:hover {
+  color: var(--first-color);
+}
+
+.qual__icon {
+  font-size: 1.2rem;
+  margin-right: var(--mb-0-5);
+}
+
+.qual__data {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  column-gap: 1.5rem;
+}
+
+.block {
+  padding: var(--mb-0-5);
+  border-radius: 1.2rem;
+  background-color: var(--first-color-lighter);
+  position: relative;
+}
+
+@media screen and (min-width: 450px) {
+  .block {
+    padding: var(--mb-1);
+  }
+
+  .qual__title {
+    font-size: 1rem;
+  }
+}
+
+/* .block:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  width: 1.5px;
+  height: 10vw;
+  top: 10px;
+  right: ;
+  transform: rotate(90deg);
+  z-index: -1;
+  background-color: var(--first-color);
+} */
+.qual__subtitle {
+  display: inline-block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-0-75);
+}
+
+.qual__calender {
+  font-size: var(--small-font-size);
+}
+
+.rounder {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: var(--first-color);
+  border-radius: 50%;
+}
+
+.line {
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: var(--first-color);
+  transform: translate(6px, -7px);
+}
+
 /*==================== SERVICES ====================*/
 
 /* Active Modal */
