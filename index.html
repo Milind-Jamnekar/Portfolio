@@ -11,7 +11,11 @@
     />
 
     <!--==================== SWIPER CSS ====================-->
-    <link rel="stylesheet" href="" />
+    <!-- <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
 
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="assets/css/styles.css" />
@@ -469,10 +473,10 @@
         <h2 class="section__title">Portfolio</h2>
         <span class="section__subtitle">My recent project/work.</span>
 
-        <div class="pf__container container">
-          <div>
+        <div class="pf__container container swiper">
+          <div class="swiper-wrapper">
             <!--============= portfolio 1 =======-->
-            <div class="pf__content grid">
+            <div class="pf__content grid swiper-slide">
               <img
                 src="assets/img/portfolio1.jpg"
                 alt="portfolio one"
@@ -492,7 +496,7 @@
             </div>
 
             <!--============= portfolio 2 =======-->
-            <div class="pf__content grid">
+            <div class="pf__content grid swiper-slide">
               <img
                 src="assets/img/portfolio2.jpg"
                 alt="portfolio two"
@@ -512,7 +516,7 @@
             </div>
 
             <!--============= portfolio 1 =======-->
-            <div class="pf__content grid">
+            <div class="pf__content grid swiper-slide">
               <img
                 src="assets/img/portfolio1.jpg"
                 alt="portfolio one"
@@ -530,6 +534,17 @@
                 </a>
               </div>
             </div>
+          </div>
+
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b sw__pf-icon"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b sw__pf-icon"></i>
           </div>
         </div>
       </section>
@@ -550,7 +565,9 @@
     <!--==================== SCROLL TOP ====================-->
 
     <!--==================== SWIPER JS ====================-->
-    <!-- <script src=""></script> -->
+    <!-- <script src="assets/js/swiper-bundle.min.js"></script> -->
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <!--==================== Gsap  ======================-->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script> -->
 

@@ -49,8 +49,6 @@ const modalViews = document.querySelectorAll(".service__modal"),
   modalBtns = document.querySelectorAll(".service__btn"),
   modalCloses = document.querySelectorAll(".modal__close");
 
-console.log(modalViews, modalBtns, modalCloses);
-
 let modal = function (modalClick) {
   modalViews[modalClick].classList.add("active-modal");
 };
@@ -70,6 +68,28 @@ modalCloses.forEach((close) => {
 });
 
 /*==================== PORTFOLIO SWIPER  ====================*/
+const swiper = new Swiper(".swiper", {
+  // Optional parameters
+  loop: true,
+  // mousewheel: true,
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+    pageUpDown: true,
+  },
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 
 /*==================== TESTIMONIAL ====================*/
 

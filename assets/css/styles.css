@@ -704,7 +704,54 @@ img {
 }
 /*==================== PORTFOLIO ====================*/
 
-/*==================== PROJECT IN MIND ====================*/
+/* .pf__container {
+  overflow: initial;
+} */
+
+.pf__content {
+  padding: 0 1rem;
+}
+
+.pf__img {
+  width: 256px;
+  border-radius: 0.5rem;
+  justify-self: center;
+}
+
+.pf__title {
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-0-75);
+}
+
+.pf__btn:hover .btn__icon {
+  transform: translateX(0.25rem);
+}
+
+.swiper {
+  max-width: 600px;
+  /* height: 300px;  */
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: "";
+}
+
+.sw__pf-icon {
+  font-size: 2rem;
+  color: var(--first-color);
+}
+
+.swiper-button-prev {
+  left: -0.5rem;
+}
+.swiper-button-next {
+  right: -0.5rem;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: -2.5rem;
+} /*==================== PROJECT IN MIND ====================*/
 
 /*==================== TESTIMONIAL ====================*/
 
