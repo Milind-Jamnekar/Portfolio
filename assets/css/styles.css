@@ -710,6 +710,8 @@ img {
 
 .pf__content {
   padding: 0 1rem;
+  /* // For moving pagination dots little bottom  */
+  margin-bottom: 2rem;
 }
 
 .pf__img {
@@ -718,9 +720,17 @@ img {
   justify-self: center;
 }
 
+.pf__data {
+  padding-left: var(--mb-0-75);
+}
+
 .pf__title {
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-0-75);
+}
+
+.pf__description {
+  margin-bottom: var(--mb-1-5);
 }
 
 .pf__btn:hover .btn__icon {
