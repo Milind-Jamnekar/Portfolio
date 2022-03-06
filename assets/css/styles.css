@@ -543,17 +543,17 @@ img {
   column-gap: 1.5rem;
 }
 
-.block {
+/* .block {
   padding: var(--mb-0-75) 0;
   padding-left: var(--mb-0-75);
   border-radius: 1rem;
   background-color: var(--first-color);
   position: relative;
   color: #fff;
-}
-.qual__title {
+} */
+/* .qual__title {
   color: #fff;
-}
+} */
 
 @media screen and (min-width: 450px) {
   .block {
@@ -579,13 +579,13 @@ img {
 .qual__subtitle {
   display: inline-block;
   font-size: var(--small-font-size);
-  margin-bottom: var(--mb-0-75);
-  color: var(--first-color-lighter);
+  margin-bottom: var(--mb-1);
+  /* color: var(--first-color-alt); */
 }
 
 .qual__calender {
   font-size: var(--small-font-size);
-  color: var(--first-color-lighter);
+  /* color: var(--first-color-lighter); */
 }
 
 .rounder {
