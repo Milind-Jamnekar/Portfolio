@@ -67,6 +67,17 @@ modalCloses.forEach((close) => {
   });
 });
 
+// Removing modal even clicking outside of modal
+const outsideModel = document.querySelectorAll(".service__modal");
+
+outsideModel.forEach((el) => {
+  el.addEventListener("click", () => {
+    modalViews.forEach((view) => {
+      view.classList.remove("active-modal");
+    });
+  });
+});
+
 /*==================== PORTFOLIO SWIPER  ====================*/
 const swiper = new Swiper(".swiper", {
   // Optional parameters
@@ -94,31 +105,6 @@ const swiper = new Swiper(".swiper", {
 /*==================== TESTIMONIAL ====================*/
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
-// const sections = document.querySelectorAll("section[id]");
-
-function scrollActive1() {
-  const scrollY = window.pageXOffset;
-
-  sections.forEach((section) => {
-    const sectionH = section.offsetHeight;
-    const sectionT = section.offsetTop - 50;
-
-    const sectionId = section.getAttribute("id");
-
-    if (scrollY > sectionT && scrollY <= sectionT + sectionH) {
-      document
-        .querySelector(".nav__menu a[href*=" + sectionId + "]")
-        .classList.add("active-link");
-    } else {
-      document
-        .querySelector(".nav__menu a[href*=" + sectionId + "]")
-        .classList.remove("active-link");
-    }
-  });
-}
-
-// window.addEventListener("scroll", scrollActive);
-
 const sections = document.querySelectorAll("section[id]");
 
 function scrollActive() {
