@@ -761,11 +761,55 @@ img {
 
 .swiper-container-horizontal > .swiper-pagination-bullets {
   bottom: -2.5rem;
-} /*==================== PROJECT IN MIND ====================*/
-
-/*==================== TESTIMONIAL ====================*/
+}
 
 /*==================== CONTACT ME ====================*/
+.cta__container {
+  row-gap: 3rem;
+}
+
+.cta__info {
+  display: flex;
+  margin-bottom: var(--mb-2);
+}
+
+.cta__icon {
+  font-size: 2rem;
+  color: var(--first-color);
+  margin-right: var(--mb-0-75);
+}
+
+.cta__title {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+}
+
+.cta__subtitle {
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+
+.cta__content {
+  background-color: var(--input-color);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem 0.25rem;
+}
+
+.cta__label {
+  font-size: var(--small-font-size);
+  color: var(--title-color);
+}
+
+.cta__input {
+  width: 100%;
+  background-color: var(--input-color);
+  color: var(--text-color);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  outline: none;
+  border: none;
+  padding: 0.25rem 0.5rem 0.5rem 0;
+}
 
 /*==================== FOOTER ====================*/
 
