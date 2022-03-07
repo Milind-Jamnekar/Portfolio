@@ -589,7 +589,7 @@
           </div>
 
           <form action="" class="cta__form grid">
-            <div class="grid">
+            <div class="cta__inputs grid">
               <div class="cta__content">
                 <label for="name" class="cta__label">Name</label>
                 <input type="text" id="name" class="cta__input name" />
@@ -599,25 +599,24 @@
                 <label for="Email" class="cta__label">Email</label>
                 <input type="email" id="email" class="cta__input email" />
               </div>
+            </div>
+            <div class="cta__content">
+              <label for="message" class="cta__label">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="0"
+                rows="7"
+                class="cta__input message"
+              ></textarea>
+            </div>
 
-              <div class="cta__content">
-                <label for="message" class="cta__label">Message</label>
-                <textarea
-                  name="message"
-                  id="message"
-                  cols="0"
-                  rows="7"
-                  class="cta__input message"
-                ></textarea>
-              </div>
+            <div>
+              <a href="#" class="btn btn--flex"
+                >Send Message
 
-              <div>
-                <a href="#" class="btn btn--flex"
-                  >Send Message
-
-                  <i class="uil uil-message btn__icon"></i>
-                </a>
-              </div>
+                <i class="uil uil-message btn__icon"></i>
+              </a>
             </div>
           </form>
         </div>
