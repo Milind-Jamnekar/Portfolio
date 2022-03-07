@@ -90,7 +90,7 @@ body.dark-theme {
 .change-theme {
   font-size: 1.25rem;
   color: var(--title-color);
-  margin-right: var(--mb-1);
+  margin: 0 var(--mb-1);
   cursor: pointer;
 }
 
@@ -744,7 +744,7 @@ img {
 .pf__content {
   padding: 0 1rem;
   /* // For moving pagination dots little bottom  */
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .pf__img {
@@ -771,7 +771,7 @@ img {
 }
 
 .swiper {
-  max-width: 600px;
+  /* max-width: 600px; */
   /* height: 300px;  */
 }
 
@@ -1017,6 +1017,153 @@ img {
     display: grid;
     grid-template-columns: 0.7fr;
     justify-content: center;
+  }
+}
+
+/* laptop  */
+@media screen and (min-width: 768px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .section {
+    margin: 6rem 0 2rem;
+  }
+
+  .header {
+    top: 0;
+    bottom: initial;
+  }
+
+  .header,
+  .main,
+  .footer__container {
+    padding: 0 1rem;
+  }
+
+  .header {
+    height: calc(var(--header-height) + 1.5rem);
+  }
+
+  .nav__icon,
+  .nav__close,
+  .nav__toggle {
+    display: none;
+  }
+  .nav__list {
+    display: flex;
+    column-gap: 2rem;
+  }
+
+  .nav__menu {
+    margin-left: auto;
+  }
+
+  .home__container {
+    row-gap: 5rem;
+    column-gap: 2rem;
+    align-items: center;
+  }
+
+  .home__content {
+    padding-top: 5.5rem;
+    column-gap: 2.2rem;
+  }
+
+  .home__blob {
+    width: 270px;
+  }
+
+  .home__scroll {
+    display: block;
+  }
+
+  .home__scroll-btn {
+    margin-left: 3rem;
+  }
+
+  .about-container {
+    column-gap: 5rem;
+  }
+
+  .about__img {
+    width: 350px;
+  }
+
+  .about__desc {
+    text-align: initial;
+  }
+
+  .about__info {
+    justify-content: space-between;
+  }
+
+  .about__btn {
+    justify-content: initial;
+  }
+
+  .qual__tabs {
+    justify-content: center;
+  }
+
+  .qual__btn {
+    margin: 0 var(--mb-1);
+  }
+
+  .qual__sections {
+    grid-template-columns: 0.5fr;
+  }
+
+  .service__container {
+    grid-template-columns: repeat(2, 218px);
+    justify-content: center;
+  }
+
+  .service__icon {
+    font-size: 2rem;
+  }
+
+  .service__content {
+    padding: 6rem 0 2rem 2.5rem;
+  }
+
+  .service__modal > div {
+    width: 480px;
+  }
+
+  .pf__img {
+    width: 320px;
+  }
+
+  .pf__content {
+    align-items: center;
+    gap: 0;
+  }
+
+  .footer__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer__bg {
+    padding: 3rem 0 3.5rem;
+  }
+
+  .footer__links {
+    flex-direction: row;
+    column-gap: 2rem;
+  }
+
+  .footer__socials {
+    justify-self: flex-end;
+  }
+
+  .footer__copy {
+    margin-top: 4.5rem;
   }
 }
 
