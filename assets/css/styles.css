@@ -796,6 +796,10 @@ img {
   bottom: -2.5rem;
 }
 
+.swiper-pagination-bullet {
+  background: var(--first-color-lighter);
+}
+
 /*==================== CONTACT ME ====================*/
 .cta__container {
   row-gap: 3rem;
@@ -1167,4 +1171,54 @@ img {
   }
 }
 
-/* For large devices */ ;
+/* For large devices */
+
+@media screen and (min-width: 1024px) {
+  .header,
+  .main,
+  .footer__container {
+    padding: 0;
+  }
+
+  .home__blob {
+    width: 320px;
+  }
+
+  .home__social-icon {
+    font-size: 2rem;
+  }
+  .home__social {
+    transform: translateX(-6rem);
+  }
+
+  .service__container {
+    grid-template-columns: repeat(2, 359px);
+  }
+
+  .service__content {
+    padding: 9rem 0 2rem 2.5rem;
+  }
+
+  .sw__pf-icon {
+    font-size: 3.5rem;
+  }
+
+  .swiper-button-next {
+    right: -0.3rem;
+  }
+  .swiper-button-prev {
+    left: -0.3rem;
+  }
+
+  .swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: -4.5rem;
+  }
+
+  .cta__form {
+    width: 460px;
+  }
+
+  .cta__inputs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
