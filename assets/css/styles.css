@@ -856,12 +856,11 @@ img {
 
 .footer__title {
   font-size: 1.75rem;
-  letter-spacing: 0.1ch;
   /* margin-bottom: var(--mb-0-25); */
 }
 
 .footer__subtitle {
-  font-size: var(--h2-font-size);
+  font-size: var(--h3-font-size);
 }
 
 .footer__links {
@@ -990,6 +989,35 @@ img {
   }
 }
 
-/* For medium devices */
+/* For medium devices (tablet ) */
+
+@media screen and (min-width: 568px) {
+  .home__content {
+    grid-template-columns: max-content 1fr 1fr;
+  }
+
+  .home__data {
+    grid-column: initial;
+  }
+
+  .home__img {
+    order: 1;
+    justify-self: center;
+  }
+
+  .about-container,
+  .skills__container,
+  .pf__content,
+  .cta__container,
+  .footer__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .qual__sections {
+    display: grid;
+    grid-template-columns: 0.7fr;
+    justify-content: center;
+  }
+}
 
 /* For large devices */ ;
