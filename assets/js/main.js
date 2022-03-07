@@ -147,3 +147,35 @@ function scrollTop() {
 window.addEventListener("scroll", scrollTop);
 
 /*==================== DARK LIGHT THEME ====================*/
+const themeBtn = document.getElementById("theme-button");
+console.log(themeBtn);
+const darkTheme = "dark-theme";
+const iconTheme = "uil-sun";
+
+// Previsouly selected choice (if user is selected )
+const selectedTheme = localStorage.getItem("selected-theme");
+const selectedIcon = localStorage.getItem("selected-icon");
+
+const getCurrentTheme = () =>
+  document.body.classList.contains(darkTheme) ? "dark" : "light";
+const getCurrentIcon = () =>
+  document.body.classList.contains(iconTheme) ? "uil-moon" : "uil-sun";
+
+if (selectedTheme) {
+  document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
+    darkTheme
+  );
+  themeBtn.classList[selectedTheme === "uil-moon" ? "add" : "remove"](
+    iconTheme
+  );
+}
+
+//Activate/De theme manually
+themeBtn.addEventListener("click", () => {
+  //Add or remove dark theme / icon theme
+  document.body.classList.toggle(darkTheme);
+  themeBtn.classList.toggle(iconTheme);
+
+  localStorage.setItem("selected-theme", getCurrentTheme());
+  localStorage.setItem("selected-icon", getCurrentIcon());
+});
