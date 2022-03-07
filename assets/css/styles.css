@@ -946,6 +946,49 @@ img {
 }
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
+@media screen and (max-width: 350px) {
+  .container {
+    margin-right: var(--mb-1);
+    margin-left: var(--mb-1);
+  }
+
+  .nav__menu {
+    padding: 2rem 0.25rem 4rem;
+  }
+
+  .nav__list {
+    column-gap: 0;
+  }
+
+  .home__content {
+    grid-template-columns: 0.25fr 3fr;
+  }
+
+  .home__blob {
+    width: 180px;
+  }
+
+  .skills__title {
+    font-size: var(--normal-font-size);
+  }
+
+  .qual__data {
+    gap: 0.5rem;
+  }
+
+  .service__container {
+    grid-template-columns: max-content;
+    justify-content: center;
+  }
+
+  .service__content {
+    padding-right: 3.5rem;
+  }
+
+  .service__modal {
+    padding: 0 0.5rem;
+  }
+}
 
 /* For medium devices */
 
