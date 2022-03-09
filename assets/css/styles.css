@@ -588,6 +588,10 @@ img {
   color: #fff;
 } */
 
+.qual__reveal {
+  display: none;
+}
+
 @media screen and (min-width: 450px) {
   .block {
     padding: var(--mb-1);
@@ -1120,7 +1124,11 @@ img {
   }
 
   .qual__sections {
-    grid-template-columns: 0.5fr;
+    grid-template-columns: 1fr;
+  }
+
+  .qual__reveal {
+    display: block;
   }
 
   .service__container {
@@ -1212,6 +1220,10 @@ img {
 
   .swiper-container-horizontal > .swiper-pagination-bullets {
     bottom: -4.5rem;
+  }
+
+  .qual__title {
+    font-size: 1.25rem;
   }
 
   .cta__form {
