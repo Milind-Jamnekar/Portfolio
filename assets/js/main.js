@@ -148,7 +148,6 @@ window.addEventListener("scroll", scrollTop);
 
 /*==================== DARK LIGHT THEME ====================*/
 const themeBtn = document.getElementById("theme-button");
-console.log(themeBtn);
 const darkTheme = "dark-theme";
 const iconTheme = "uil-sun";
 
