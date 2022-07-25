@@ -863,6 +863,11 @@ img {
   padding: 0.25rem 0.5rem 0.5rem 0;
 }
 
+.cta__btn button {
+  border: none;
+  outline: none;
+}
+
 /*==================== FOOTER ====================*/
 .footer__container {
   row-gap: 3.5rem;

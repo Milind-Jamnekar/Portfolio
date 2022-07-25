@@ -602,7 +602,7 @@
 
               <div>
                 <h3 class="cta__title">Call me</h3>
-                <span class="cta__subtitle">9930441962</span>
+                <a href="tel:7977284199" class="cta__subtitle">7977284***</a>
               </div>
             </div>
 
@@ -610,7 +610,9 @@
               <i class="uil uil-envelope cta__icon"></i>
               <div>
                 <h3 class="cta__title">Email</h3>
-                <span class="cta__subtitle">milind.jamnekar@yahoo.com</span>
+                <a href="mailto:milind.jamnekar@yahoo" class="cta__subtitle"
+                  >milind.jamnekar@yahoo.com</a
+                >
               </div>
             </div>
 
@@ -623,21 +625,39 @@
             </div>
           </div>
 
-          <form action="" class="cta__form grid">
+          <form
+            target="_blank"
+            action="https://formsubmit.co/milind.jamnekar@yahoo.com"
+            method="POST"
+            class="cta__form grid"
+          >
             <div class="cta__inputs grid">
               <div class="cta__content">
                 <label for="name" class="cta__label">Name</label>
-                <input type="text" id="name" class="cta__input name" />
+                <input
+                  required
+                  name="name"
+                  type="text"
+                  id="name"
+                  class="cta__input name"
+                />
               </div>
 
               <div class="cta__content">
                 <label for="Email" class="cta__label">Email</label>
-                <input type="email" id="email" class="cta__input email" />
+                <input
+                  required
+                  name="email"
+                  type="email"
+                  id="email"
+                  class="cta__input email"
+                />
               </div>
             </div>
             <div class="cta__content">
               <label for="message" class="cta__label">Message</label>
               <textarea
+                name="message"
                 name="message"
                 id="message"
                 cols="0"
@@ -646,12 +666,12 @@
               ></textarea>
             </div>
 
-            <div>
-              <a href="#" class="btn btn--flex"
-                >Send Message
+            <div class="cta__btn">
+              <button type="submit" class="btn btn--flex">
+                Send Message
 
                 <i class="uil uil-message btn__icon"></i>
-              </a>
+              </button>
             </div>
           </form>
         </div>
